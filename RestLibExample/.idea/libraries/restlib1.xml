@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="restlib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RestLib/release/restlib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
