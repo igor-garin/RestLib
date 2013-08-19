@@ -12,8 +12,8 @@ import android.os.Parcelable;
 
 public class SingleRequestManagerActivityHelper<T extends PoCService>
 		implements OnRequestFinishedListener {
-	
-	private static class ReqParams implements Parcelable {
+
+    private static class ReqParams implements Parcelable {
 		
 		private int reqType;
 		private Bundle params;
@@ -73,6 +73,7 @@ public class SingleRequestManagerActivityHelper<T extends PoCService>
 		private Result mResult;
 		private int requestId;
 		private int resultCode;
+        private int statusCode;
 		private Bundle payload;
 		
 		private ReqResults() {
@@ -83,6 +84,7 @@ public class SingleRequestManagerActivityHelper<T extends PoCService>
 			mResult = (Result)in.readValue(Result.class.getClassLoader());
 			requestId = in.readInt();
 			resultCode = in.readInt();
+            statusCode = in.readInt();
 			payload = in.readBundle();
 		}
 
@@ -93,7 +95,8 @@ public class SingleRequestManagerActivityHelper<T extends PoCService>
 		public void writeToParcel(final Parcel dest, final int flags) {
 			dest.writeValue(mResult);
 			dest.writeInt(requestId);
-			dest.writeInt(requestId);
+			dest.writeInt(resultCode);
+            dest.writeInt(statusCode);
 			dest.writeBundle(payload);
 		}
 
@@ -115,18 +118,17 @@ public class SingleRequestManagerActivityHelper<T extends PoCService>
 
 		public void onRequestStarted(int requestType);
 
-		public void onHandleError(int requestType, int resultCode, Bundle payload);
+		public void onRequestDataError(int requestType);
 
-		public void onConnexionError(int requestType, int resultCode,
-				Bundle payload);
+		public void onRequestConnectionError(int requestType, int statusCode);
 
-		public void onRequestSuccessed(int requestType, int resultCode,
-				Bundle payload);
+        public void onRequestCustomError(int requestType, Bundle resultData);
 
+		public void onRequestSuccessed(int requestType,	Bundle payload);
 	}
 
 	private enum Result {
-		Finished, Error, Connexion
+		Finished, Error, Connexion, CustomError
 	}
 	
 	// === public constants ===
@@ -227,14 +229,17 @@ public class SingleRequestManagerActivityHelper<T extends PoCService>
 			if(mReqResults != null) {
 				switch(mReqResults.mResult) {
 				case Finished:
-					onRequestFinished(mReqResults.requestId, mReqResults.resultCode, mReqResults.payload);
+					onRequestFinished(mReqResults.requestId, mReqResults.payload);
 					break;
 				case Error:
-					onHandleError(mReqResults.requestId, mReqResults.resultCode, mReqResults.payload);
+                    onRequestDataError(mReqResults.requestId);
 					break;
 				case Connexion:
-					onConnexionError(mReqResults.requestId, mReqResults.resultCode, mReqResults.payload);
+                    onRequestConnectionError(mReqResults.requestId, mReqResults.statusCode);
 					break;
+                case CustomError:
+                    onRequestCustomError(mReqResults.requestId, mReqResults.payload);
+                    break;
 				}
 				mReqResults = null;
 			}
@@ -250,63 +255,78 @@ public class SingleRequestManagerActivityHelper<T extends PoCService>
 	
 	// === call back methods ===
 
-	@Override
-	public void onRequestFinished(int requestId, int resultCode, Bundle payload) {
-		if (requestId == mRequestId) {
-			if (!mIsPaused) {
-				mRequestId = -1;
-				mRequestManager.removeOnRequestFinishedListener(this);
-				if (mListener != null) {
-					mListener.onRequestFinished(mReqType);
-					mListener.onRequestSuccessed(mReqType, resultCode, payload);
-				}
-			} else {
-				mReqResults = new ReqResults();
-				mReqResults.mResult = Result.Finished;
-				mReqResults.payload = payload;
-				mReqResults.requestId = requestId;
-				mReqResults.resultCode = resultCode;
-			}
-		}
-	}
+    @Override
+    public void onRequestFinished(int requestId, Bundle resultData) {
+        if (requestId == mRequestId) {
+            if (!mIsPaused) {
+                mRequestId = -1;
+                mRequestManager.removeOnRequestFinishedListener(this);
+                if (mListener != null) {
+                    mListener.onRequestFinished(mReqType);
+                    mListener.onRequestSuccessed(mReqType, resultData);
+                }
+            } else {
+                mReqResults = new ReqResults();
+                mReqResults.mResult = Result.Finished;
+                mReqResults.payload = resultData;
+                mReqResults.requestId = requestId;
+            }
+        }
+    }
 
-	@Override
-	public void onHandleError(int requestId, int resultCode, Bundle payload) {
-		if (requestId == mRequestId) {
-			if (!mIsPaused) {
-				mRequestId = -1;
-				mRequestManager.removeOnRequestFinishedListener(this);
-				if (mListener != null) {
-					mListener.onRequestFinished(mReqType);
-					mListener.onHandleError(mReqType, resultCode, payload);
-				}
-			} else {
-				mReqResults = new ReqResults();
-				mReqResults.mResult = Result.Error;
-				mReqResults.payload = payload;
-				mReqResults.requestId = requestId;
-				mReqResults.resultCode = resultCode;
-			}
-		}
-	}
+    @Override
+    public void onRequestConnectionError(int requestId, int statusCode) {
+        if (requestId == mRequestId) {
+            if (!mIsPaused) {
+                mRequestId = -1;
+                mRequestManager.removeOnRequestFinishedListener(this);
+                if (mListener != null) {
+                    mListener.onRequestFinished(mReqType);
+                    mListener.onRequestConnectionError(mReqType, statusCode);
+                }
+            } else {
+                mReqResults = new ReqResults();
+                mReqResults.mResult = Result.Connexion;
+                mReqResults.statusCode = statusCode;
+                mReqResults.requestId = requestId;
+            }
+        }
+    }
 
-	@Override
-	public void onConnexionError(int requestId, int resultCode, Bundle payload) {
-		if (requestId == mRequestId) {
-			if (!mIsPaused) {
-				mRequestId = -1;
-				mRequestManager.removeOnRequestFinishedListener(this);
-				if (mListener != null) {
-					mListener.onRequestFinished(mReqType);
-					mListener.onConnexionError(mReqType, resultCode, payload);
-				}
-			} else {
-				mReqResults = new ReqResults();
-				mReqResults.mResult = Result.Connexion;
-				mReqResults.payload = payload;
-				mReqResults.requestId = requestId;
-				mReqResults.resultCode = resultCode;
-			}
-		}
-	}
+    @Override
+    public void onRequestDataError(int requestId) {
+        if (requestId == mRequestId) {
+            if (!mIsPaused) {
+                mRequestId = -1;
+                mRequestManager.removeOnRequestFinishedListener(this);
+                if (mListener != null) {
+                    mListener.onRequestFinished(mReqType);
+                    mListener.onRequestDataError(mReqType);
+                }
+            } else {
+                mReqResults = new ReqResults();
+                mReqResults.mResult = Result.Error;
+                mReqResults.requestId = requestId;
+            }
+        }
+    }
+
+    @Override
+    public void onRequestCustomError(int requestId, Bundle resultData) {
+        if (requestId == mRequestId) {
+            if (!mIsPaused) {
+                mRequestId = -1;
+                mRequestManager.removeOnRequestFinishedListener(this);
+                if (mListener != null) {
+                    mListener.onRequestFinished(mReqType);
+                    mListener.onRequestCustomError(mReqType, resultData);
+                }
+            } else {
+                mReqResults = new ReqResults();
+                mReqResults.mResult = Result.Error;
+                mReqResults.requestId = requestId;
+                mReqResults.payload = resultData;
+            }
+        }
+    }
 }

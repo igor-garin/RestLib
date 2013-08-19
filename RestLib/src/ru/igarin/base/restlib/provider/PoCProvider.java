@@ -24,22 +24,22 @@ public abstract class PoCProvider extends ContentProvider {
 	private static int URI_CASE_ALL_INIT_TMP = URI_CASE_ALL;
 	private static int URI_CASE_ID_INIT_TMP = URI_CASE_ID;
 
-	public static String getAUTHORITY(Class<? extends PoCProvider> provider) {
+	static String getAUTHORITY(Class<? extends PoCProvider> provider) {
 		return provider.getName();
 	}
 	
-	public static Uri getCONTENT_URI(Class<? extends PoCProvider> provider) {
+	static Uri getCONTENT_URI(Class<? extends PoCProvider> provider) {
 		return Uri.parse("content://" + getAUTHORITY(provider));
 	}
 	
-	public static Uri getINTEGRITY_CHECK_URI(Class<? extends PoCProvider> provider) {
+	static Uri getINTEGRITY_CHECK_URI(Class<? extends PoCProvider> provider) {
 		return Uri.parse("content://"
 				+ getAUTHORITY(provider) + "/integrityCheck");
 	}
 
 	private SQLiteDatabase mDatabase;
 
-	public synchronized SQLiteDatabase getDatabase(final Context context,
+	synchronized SQLiteDatabase getDatabase(final Context context,
 			Class<? extends Object> classToHandle) {
 		// TODO: Always return the cached database, if we've got one
 		/*

@@ -13,8 +13,7 @@
     </filters>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="com.example.ru.mera.restlibexample" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d0250f0-58b9-48e8-ae58-3711eae730e7" name="Default" comment="" />
@@ -37,6 +36,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -73,7 +73,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -83,22 +82,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ThisProvider.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/ru/mera/restlibexample/rest/ThisProvider.java">
+      <file leaf-file-name="CopyOfNewMainActvity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfNewMainActvity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+            <state line="59" column="50" selection-start="2720" selection-end="2720" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="5415">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Requester.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/Requester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="169" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2774">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotifyingAsyncQueryHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/NotifyingAsyncQueryHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="58" selection-start="827" selection-end="827" vertical-scroll-proportion="0.64772725" vertical-offset="0" max-vertical-offset="2223">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestWorker.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/ru/mera/restlibexample/rest/workers/RestWorker.java">
+      <file leaf-file-name="MainActvity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/MainActvity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="58" selection-end="121" vertical-scroll-proportion="0.046398047" vertical-offset="0" max-vertical-offset="819">
+            <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6745">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkerSyncPhoneList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerSyncPhoneList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="56" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1197">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProviderHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/ProviderHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="4" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="5453">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkerEditPhoneList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerEditPhoneList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="56" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoCProvider.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/PoCProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="346" column="53" selection-start="10363" selection-end="10363" vertical-scroll-proportion="0.0" vertical-offset="5961" max-vertical-offset="6840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewMainActvity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/NewMainActvity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5111">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkerAddPhoneList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerAddPhoneList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="56" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="1197">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,7 +190,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CrudSyncPhoneAddEditActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/dto/PhoneList.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/data/Phone.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/dto/PhoneFromServer.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfBaseListActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerDeletePhoneList.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/config/PH.java" />
         <option value="$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/ProviderHelper.java" />
+        <option value="$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/PoCProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerAddPhoneList.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerSyncPhoneList.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerEditPhoneList.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/MainActvity.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/NewMainActvity.java" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfNewMainActvity.java" />
+        <option value="$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/Requester.java" />
       </list>
     </option>
   </component>
@@ -136,6 +228,24 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+  <component name="ProjectStructureProblems">
+    <ignored-problems>
+      <problem id="library-invalid-classes-path(library:project:android-support-v4)" />
+      <problem id="library-invalid-classes-path(library:project:libs)" />
+      <problem id="unused-library(library:project:android-support-v4)" />
+      <problem id="unused-library(library:project:classes)" />
+      <problem id="unused-library(library:project:libs)" />
+      <problem id="unused-library(library:project:restlib)" />
+      <problem id="unused-library(library:project:restlib1)" />
+      <problem id="unused-library(library:project:restlib2)" />
+      <problem id="unused-library(library:project:restlib3)" />
+      <problem id="unused-library(library:project:restlib4)" />
+      <problem id="unused-library(library:project:restlib5)" />
+      <problem id="unused-library(library:project:restlib6)" />
+      <problem id="unused-library(library:project:restlib7)" />
+      <problem id="unused-library(library:project:restlib8)" />
+    </ignored-problems>
+  </component>
   <component name="ProjectView">
     <navigator currentView="PackagesPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -150,210 +260,158 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com.example.ru.mera.restlibexample" />
+              <option name="myItemId" value="com.foxykeep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datadroidpoc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com.example.ru.mera.restlibexample" />
+              <option name="myItemId" value="com.foxykeep" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
+              <option name="myItemId" value="datadroid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com.example.ru.mera.restlibexample" />
+              <option name="myItemId" value="com.foxykeep" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
+              <option name="myItemId" value="datadroid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="workers" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLibExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com.example.ru.mera.restlibexample" />
+              <option name="myItemId" value="ru.igarin.base" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="restlib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="restlibexample" />
+              <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru.igarin.base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restlib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="provider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLibExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru.igarin.base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLibExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLibExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLibExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -361,25 +419,27 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editor.preferences.import" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RestLib" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="Android Application.restlibexample">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\personal\Dropbox\Programming\git\WORKING_DIRECTORY\RestLib\RestLib\src\ru\igarin\base\restlib\exception" />
+      <recent name="D:\personal\Dropbox\Programming\git\WORKING_DIRECTORY\RestLib\RestLib\src\ru\igarin\base\restlib\network" />
+      <recent name="D:\personal\Dropbox\Programming\git\WORKING_DIRECTORY\RestLib\RestLib\src\android\support\util" />
+      <recent name="D:\personal\Dropbox\Programming\git\WORKING_DIRECTORY\RestLib\RestLib\src\ru\igarin\base\restlib\network\internal" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android Application.RestLibExample">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -469,12 +529,12 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="restlibexample" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="restlibexample" />
+    <configuration default="false" name="RestLibExample" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="RestLibExample" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -483,12 +543,10 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.restlibexample" />
+      <item index="0" class="java.lang.String" itemvalue="Android Application.RestLibExample" />
     </list>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
@@ -529,38 +587,47 @@
       <updated>1376470330519</updated>
       <workItem from="1376470332207" duration="666000" />
       <workItem from="1376471092497" duration="421000" />
+      <workItem from="1376908994739" duration="803000" />
+      <workItem from="1376909871502" duration="61000" />
+      <workItem from="1376909996935" duration="8432000" />
+      <workItem from="1376918813754" duration="105000" />
+      <workItem from="1376918940186" duration="321000" />
+      <workItem from="1376919270935" duration="162000" />
+      <workItem from="1376919461005" duration="1287000" />
+      <workItem from="1376922302718" duration="730000" />
+      <workItem from="1376923066654" duration="1090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1087000" />
+    <option name="totallyTimeSpent" value="14078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1688" height="998" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.9266272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3289941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36094674" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25214198" sideWeight="0.6710059" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.07337278" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24663402" sideWeight="0.6710059" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21893491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -626,55 +693,127 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/ru/mera/restlibexample/rest/PH.java">
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/BaseListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/ProviderHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="24" selection-start="2751" selection-end="2751" vertical-scroll-proportion="0.0" vertical-offset="1169" max-vertical-offset="8037">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/ProviderHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="78" selection-start="1137" selection-end="1139" vertical-scroll-proportion="0.16239317" vertical-offset="456" max-vertical-offset="8056">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/ru/mera/restlibexample/rest/PH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.23199023" vertical-offset="0" max-vertical-offset="819">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/ru/mera/restlibexample/rest/ThisProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+        <state line="115" column="39" selection-start="4289" selection-end="4303" vertical-scroll-proportion="0.0" vertical-offset="1558" max-vertical-offset="3268">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/ru/mera/restlibexample/rest/workers/RestWorker.java">
+    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/exception/ConnectionException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="58" selection-end="121" vertical-scroll-proportion="0.046398047" vertical-offset="0" max-vertical-offset="819">
+        <state line="15" column="19" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1786">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfBaseListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="21" selection-start="5251" selection-end="5251" vertical-scroll-proportion="0.0" vertical-offset="2252" max-vertical-offset="3211">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerDeletePhoneList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="8" selection-start="1585" selection-end="1624" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1045">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/ThisProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="106" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/PH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/ProviderHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="4" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="5453">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/PoCProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="346" column="53" selection-start="10363" selection-end="10363" vertical-scroll-proportion="0.0" vertical-offset="5961" max-vertical-offset="6840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerAddPhoneList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="56" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="1197">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerSyncPhoneList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="56" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1197">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerEditPhoneList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="56" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/MainActvity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6745">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/NewMainActvity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5111">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfNewMainActvity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="50" selection-start="2720" selection-end="2720" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="5415">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/Requester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="169" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2774">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/NotifyingAsyncQueryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="58" selection-start="827" selection-end="827" vertical-scroll-proportion="0.64772725" vertical-offset="0" max-vertical-offset="2223">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -754,7 +893,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>libs</last-edited>
+          <last-edited>android-support-v4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

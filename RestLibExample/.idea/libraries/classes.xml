@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="classes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/RestLib/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../RestLib/gen" />
+      <root url="file://$PROJECT_DIR$/../RestLib/src" />
+    </SOURCES>
+  </library>
+</component>

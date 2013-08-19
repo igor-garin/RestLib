@@ -1,6 +1,8 @@
 package ru.igarin.base.restlib.service;
 
 import ru.igarin.base.common.RestLibLog;
+import ru.igarin.base.restlib.exception.ConnectionException;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.ResultReceiver;
@@ -25,7 +27,12 @@ abstract class WorkerService extends MultiThreadService {
 		super(maxThreads);
 	}
 
-	/**
+    @Override
+    protected void onHandleIntent(Intent intent) {
+
+    }
+
+    /**
 	 * Proxy method for {@link #sendResult(Intent, Bundle, int)} when the work
 	 * is a success
 	 * 
@@ -60,12 +67,11 @@ abstract class WorkerService extends MultiThreadService {
 	 * @param data
 	 *            A {@link Bundle} the data to send back
 	 */
-	protected void sendConnexionFailure(final Intent intent, Bundle data) {
-		if (data == null) {
-			data = new Bundle();
-		}
-		data.putInt(RequestManager.RECEIVER_EXTRA_ERROR_TYPE,
-				RequestManager.RECEIVER_EXTRA_VALUE_ERROR_TYPE_CONNEXION);
+	protected void sendConnexionFailure(final Intent intent, ConnectionException exception) {
+        Bundle data = new Bundle();
+        data.putInt(RequestManager.RECEIVER_EXTRA_ERROR_TYPE, RequestManager.RECEIVER_EXTRA_VALUE_ERROR_TYPE_CONNEXION);
+        data.putInt(RequestManager.RECEIVER_EXTRA_CONNECTION_ERROR_STATUS_CODE,
+                exception.getStatusCode());
 		sendResult(intent, data, ERROR_CODE);
 	}
 
@@ -78,14 +84,26 @@ abstract class WorkerService extends MultiThreadService {
 	 * @param data
 	 *            A {@link Bundle} the data to send back
 	 */
-	protected void sendDataFailure(final Intent intent, Bundle data) {
-		if (data == null) {
-			data = new Bundle();
-		}
-		data.putInt(RequestManager.RECEIVER_EXTRA_ERROR_TYPE,
-				RequestManager.RECEIVER_EXTRA_VALUE_ERROR_TYPE_DATA);
+	protected void sendDataFailure(final Intent intent) {
+        Bundle data = new Bundle();
+        data.putInt(RequestManager.RECEIVER_EXTRA_ERROR_TYPE, RequestManager.RECEIVER_EXTRA_VALUE_ERROR_TYPE_DATA);
 		sendResult(intent, data, ERROR_CODE);
 	}
+
+    /**
+     * Proxy method for {@link #sendResult(ResultReceiver, Bundle, int)} when the work is a failure
+     * due to {@link CustomRequestException} being thrown.
+     *
+     * @param receiver The result receiver received inside the {@link Intent}.
+     * @param data A {@link Bundle} the data to send back.
+     */
+    protected void sendCustomFailure(final Intent intent, Bundle data) {
+        if (data == null) {
+            data = new Bundle();
+        }
+        data.putInt(RequestManager.RECEIVER_EXTRA_ERROR_TYPE, RequestManager.RECEIVER_EXTRA_VALUE_ERROR_TYPE_CUSTOM);
+        sendResult(intent, data, ERROR_CODE);
+    }
 
 	/**
 	 * Method used to send back the result to the {@link RequestManager}

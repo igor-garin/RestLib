@@ -28,9 +28,12 @@ public class RequestManager {
 	static final String RECEIVER_EXTRA_REQUEST_ID = "com.foxykeep.datadroid.extras.requestId";
 	static final String RECEIVER_EXTRA_RESULT_CODE = "com.foxykeep.datadroid.extras.code";
 	static final String RECEIVER_EXTRA_PAYLOAD = "com.foxykeep.datadroid.extras.payload";
+    public static final String RECEIVER_EXTRA_CONNECTION_ERROR_STATUS_CODE =
+            "com.foxykeep.datadroid.extra.connectionErrorStatusCode";
 	static final String RECEIVER_EXTRA_ERROR_TYPE = "com.foxykeep.datadroid.extras.error";
 	static final int RECEIVER_EXTRA_VALUE_ERROR_TYPE_CONNEXION = 1;
 	static final int RECEIVER_EXTRA_VALUE_ERROR_TYPE_DATA = 2;
+    static final int RECEIVER_EXTRA_VALUE_ERROR_TYPE_CUSTOM = 3;
 
 	static final int MAX_RANDOM_REQUEST_ID = 1000000;
 
@@ -85,23 +88,38 @@ public class RequestManager {
 	 */
 	public static interface OnRequestFinishedListener extends EventListener {
 
-		/**
-		 * Event fired when a request is finished.
-		 * 
-		 * @param requestId
-		 *            The request Id (to see if this is the right request)
-		 * @param resultCode
-		 *            The result code (0 if there was no error)
-		 * @param payload
-		 *            The result of the service execution.
-		 */
-		public void onRequestFinished(int requestId, int resultCode,
-				Bundle payload);
+        /**
+         * Event fired when a request is finished.
+         *
+         * @param requestId The {@link Integer} defining the request.
+         * @param resultData The result of the service execution.
+         */
+        public void onRequestFinished(int requestId, Bundle resultData);
 
-		public void onHandleError(int requestId, int resultCode, Bundle payload);
+        /**
+         * Event fired when a request encountered a connection error.
+         *
+         * @param requestId The {@link Integer} defining the request.
+         * @param statusCode The HTTP status code returned by the server (if the request succeeded
+         *            by the HTTP status code was not {@link org.apache.http.HttpStatus#SC_OK}) or -1 if it was a
+         *            connection problem
+         */
+        public void onRequestConnectionError(int requestId, int statusCode);
 
-		public void onConnexionError(int requestId, int resultCode,
-				Bundle payload);
+        /**
+         * Event fired when a request encountered a data error.
+         *
+         * @param requestId The {@link Integer} defining the request.
+         */
+        public void onRequestDataError(int requestId);
+
+        /**
+         * Event fired when a request encountered a custom error.
+         *
+         * @param requestId The {@link Integer} defining the request.
+         * @param resultData The result of the service execution.
+         */
+        public void onRequestCustomError(int requestId, Bundle resultData);
 
 	}
 
@@ -139,7 +157,7 @@ public class RequestManager {
 	 * Remove a {@link OnRequestFinishedListener} to this {@link RequestManager}
 	 * .
 	 * 
-	 * @param listenerThe
+	 * @param listener The
 	 *            listener to remove to this {@link RequestManager}.
 	 */
 	public void removeOnRequestFinishedListener(
@@ -204,23 +222,21 @@ public class RequestManager {
 				final OnRequestFinishedListener listener = weakRef.get();
 				if (listener != null) {
 					if (resultCode == PoCService.ERROR_CODE) {
-						if (resultData != null) {
-							final int errorType = resultData.getInt(
-									RequestManager.RECEIVER_EXTRA_ERROR_TYPE,
-									-1);
-							if (errorType == RequestManager.RECEIVER_EXTRA_VALUE_ERROR_TYPE_DATA) {
-								listener.onHandleError(requestId, resultCode,
-										resultData);
-							} else if (errorType == RequestManager.RECEIVER_EXTRA_VALUE_ERROR_TYPE_CONNEXION) {
-								listener.onConnexionError(requestId,
-										resultCode, resultData);
-							}
-						} else {
-							listener.onConnexionError(requestId, resultCode,
-									resultData);
-						}
+                        switch (resultData.getInt(RECEIVER_EXTRA_ERROR_TYPE)) {
+                            case RECEIVER_EXTRA_VALUE_ERROR_TYPE_DATA:
+                                listener.onRequestDataError(requestId);
+                                break;
+                            case RECEIVER_EXTRA_VALUE_ERROR_TYPE_CONNEXION:
+                                int statusCode =
+                                        resultData.getInt(RECEIVER_EXTRA_CONNECTION_ERROR_STATUS_CODE);
+                                listener.onRequestConnectionError(requestId, statusCode);
+                                break;
+                            case RECEIVER_EXTRA_VALUE_ERROR_TYPE_CUSTOM:
+                                listener.onRequestCustomError(requestId, resultData);
+                                break;
+                        }
 					} else {
-						listener.onRequestFinished(requestId, resultCode,
+						listener.onRequestFinished(requestId,
 								resultData);
 					}
 

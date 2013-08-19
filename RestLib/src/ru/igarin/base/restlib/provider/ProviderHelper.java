@@ -17,7 +17,7 @@ import ru.igarin.base.common.RestLibLog;
 import ru.igarin.base.restlib.provider.annotations.ProviderStoreable;
 import ru.igarin.base.restlib.provider.annotations.ProviderStoreableType;
 
-public class ProviderHelper {
+class ProviderHelper {
 
 	private static final String TYPE_ELEM_TYPE = "vnd.android.cursor.item/com.foxykeep.datadroid.data.";
 	private static final String TYPE_DIR_TYPE = "vnd.android.cursor.dir/com.foxykeep.datadroid.data.";
@@ -26,7 +26,7 @@ public class ProviderHelper {
 		return cls.getSimpleName().toLowerCase();
 	}
 
-	public static Uri getUri(Class<? extends PoCProvider> provider,
+	static Uri getUri(Class<? extends PoCProvider> provider,
 			Class<? extends Object> cls) {
 
 		Uri CONTENT_URI = Uri.parse(PoCProvider.getCONTENT_URI(provider) + "/"
@@ -131,7 +131,7 @@ public class ProviderHelper {
 		}
 	}
 
-	public static Object getFromCursor(Class<? extends Object> cls, Cursor c) {
+	static Object getFromCursor(Class<? extends Object> cls, Cursor c) {
 		Object obj = null;
 		try {
 			obj = cls.newInstance();
@@ -148,7 +148,7 @@ public class ProviderHelper {
 		return obj;
 	}
 
-	public static ContentValues getContentValuesImpl(Object obj) {
+	static ContentValues getContentValuesImpl(Object obj) {
 		ContentValues values = new ContentValues();
 		for (AnalyzeHelper.Record r : AnalyzeHelper.analyze(obj.getClass())) {
 			if (r.colum_id != 0) {
@@ -291,128 +291,6 @@ public class ProviderHelper {
 			default:
 				return "none";
 			}
-		}
-	}
-
-	public static class Requester<T extends PoCProvider> {
-		private final Class<T> mProviderClass;
-		private final Context mContext;
-
-		public Requester(Class<T> providerClass, final Context context) {
-			this.mProviderClass = providerClass;
-			mContext = context.getApplicationContext();
-		}
-
-		public Requester(Class<T> providerClass) {
-			this.mProviderClass = providerClass;
-			mContext = null;
-		}
-
-		public Cursor query(Class<? extends Object> cls, String[] projection, String selection,
-				String[] selectionArgs, String sortOrder) {
-			if (mContext == null) {
-				throw new IllegalArgumentException(
-						"mContext was not initialized!");
-			}
-			return query(mContext, mProviderClass, cls, projection, selection,
-					selectionArgs, sortOrder);
-		}
-
-		public int update(Class<? extends Object> cls, ContentValues values, String where,
-				String[] selectionArgs) {
-			if (mContext == null) {
-				throw new IllegalArgumentException(
-						"mContext was not initialized!");
-			}
-			return update(mContext, mProviderClass, cls, values, where,
-					selectionArgs);
-		}
-
-		public Uri insert(Class<? extends Object> cls, ContentValues values) {
-			if (mContext == null) {
-				throw new IllegalArgumentException(
-						"mContext was not initialized!");
-			}
-			return insert(mContext, mProviderClass, cls, values);
-		}
-
-		public int bulkInsert(Class<? extends Object> cls, ContentValues[] values) {
-			if (mContext == null) {
-				throw new IllegalArgumentException(
-						"mContext was not initialized!");
-			}
-			return bulkInsert(mContext, mProviderClass, cls, values);
-		}
-
-		public int delete(Class<? extends Object> cls, String where, String[] selectionArgs) {
-			if (mContext == null) {
-				throw new IllegalArgumentException(
-						"mContext was not initialized!");
-			}
-			return delete(mContext, mProviderClass, cls, where, selectionArgs);
-		}
-
-		// ================================
-		public Cursor query(Context context, Class<? extends Object> cls, String[] projection,
-				String selection, String[] selectionArgs, String sortOrder) {
-			return query(context, mProviderClass, cls, projection, selection,
-					selectionArgs, sortOrder);
-		}
-
-		public int update(Context context, Class<? extends Object> cls, ContentValues values,
-				String where, String[] selectionArgs) {
-			return update(context, mProviderClass, cls, values, where,
-					selectionArgs);
-		}
-
-		public Uri insert(Context context, Class<? extends Object> cls, ContentValues values) {
-			return insert(context, mProviderClass, cls, values);
-		}
-
-		public int bulkInsert(Context context, Class<? extends Object> cls, ContentValues[] values) {
-			return bulkInsert(context, mProviderClass, cls, values);
-		}
-
-		public int delete(Context context, Class<? extends Object> cls, String where,
-				String[] selectionArgs) {
-			return delete(context, mProviderClass, cls, where, selectionArgs);
-		}
-
-		// ================================================
-		public static Cursor query(Context context,
-				Class<? extends PoCProvider> provider, Class<? extends Object> cls,
-				String[] projection, String selection, String[] selectionArgs,
-				String sortOrder) {
-			return context.getContentResolver().query(getUri(provider, cls),
-					projection, selection, selectionArgs, sortOrder);
-		}
-
-		public static int update(Context context,
-				Class<? extends PoCProvider> provider, Class<? extends Object> cls,
-				ContentValues values, String where, String[] selectionArgs) {
-			return context.getContentResolver().update(getUri(provider, cls),
-					values, where, selectionArgs);
-		}
-
-		public static Uri insert(Context context,
-				Class<? extends PoCProvider> provider, Class<? extends Object> cls,
-				ContentValues values) {
-			return context.getContentResolver().insert(getUri(provider, cls),
-					values);
-		}
-
-		public static int bulkInsert(Context context,
-				Class<? extends PoCProvider> provider, Class<? extends Object> cls,
-				ContentValues[] values) {
-			return context.getContentResolver().bulkInsert(
-					getUri(provider, cls), values);
-		}
-
-		public static int delete(Context context,
-				Class<? extends PoCProvider> provider, Class<? extends Object> cls, String where,
-				String[] selectionArgs) {
-			return context.getContentResolver().delete(getUri(provider, cls),
-					where, selectionArgs);
 		}
 	}
 }

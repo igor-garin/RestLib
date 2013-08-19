@@ -1,35 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+     2011 Foxykeep (http://datadroid.foxykeep.com) Licensed under the Beerware 
+	License : As long as you retain this notice you can do whatever you want 
+	with this stuff. If we meet some day, and you think this stuff is worth it, 
+	you can buy me a beer in return
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ru.mera.restlibexample"
-    android:versionCode="1"
+    package="com.foxykeep.datadroidpoc"
+    android:versionCode="3"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
         <activity
-            android:name="com.example.ru.mera.restlibexample.MainActivity"
-            android:label="@string/app_name" >
+            android:name=".ui.MainActvity"
+            android:label="@string/crud_sync_phone_list_title" >
+        </activity>
+        <activity
+            android:name=".ui.NewMainActvity"
+            android:label="@string/crud_sync_phone_list_title" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.CrudSyncPhoneViewActivity"
+            android:label="@string/crud_sync_phone_view_title"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ui.CrudSyncPhoneAddEditActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ui.CopyOfNewMainActvity"
+            android:label="@string/crud_sync_phone_list_title" >
+        </activity>
 
         <service
-            android:name="com.example.ru.mera.restlibexample.rest.ThisService"
+            android:name="com.foxykeep.datadroid.config.ThisService"
             android:exported="false" />
 
         <provider
-            android:name="com.example.ru.mera.restlibexample.rest.ThisProvider"
-            android:authorities="ru.inmixed.nn.rest.ThisProvider"
+            android:name="com.foxykeep.datadroid.config.ThisProvider"
+            android:authorities="com.foxykeep.datadroid.config.ThisProvider"
             android:exported="false" />
     </application>
 
