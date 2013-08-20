@@ -12,6 +12,11 @@
       </filter>
     </filters>
   </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
@@ -82,91 +87,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CopyOfNewMainActvity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfNewMainActvity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="50" selection-start="2720" selection-end="2720" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="5415">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Requester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/Requester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="169" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2774">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotifyingAsyncQueryHandler.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/NotifyingAsyncQueryHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="58" selection-start="827" selection-end="827" vertical-scroll-proportion="0.64772725" vertical-offset="0" max-vertical-offset="2223">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActvity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/MainActvity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6745">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkerSyncPhoneList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerSyncPhoneList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="56" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1197">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProviderHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/ProviderHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="4" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="5453">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WorkerEditPhoneList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerEditPhoneList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="56" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PoCProvider.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/PoCProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="346" column="53" selection-start="10363" selection-end="10363" vertical-scroll-proportion="0.0" vertical-offset="5961" max-vertical-offset="6840">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewMainActvity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/NewMainActvity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5111">
+            <state line="25" column="13" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="1330">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThisService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/ThisService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThisProvider.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/ThisProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestConst.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/RestConst.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PH.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/PH.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="143" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lg.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/Lg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="28" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9139">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DialogActivityHelper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/DialogActivityHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="310" selection-end="346" vertical-scroll-proportion="0.14393939" vertical-offset="0" max-vertical-offset="1577">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Phone.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/data/Phone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="4" selection-start="620" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,7 +166,16 @@
       <file leaf-file-name="WorkerAddPhoneList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerAddPhoneList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="56" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="1197">
+            <state line="26" column="13" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="836">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkerDeletePhoneList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerDeletePhoneList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="13" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="722">
               <folding />
             </state>
           </provider>
@@ -190,8 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CrudSyncPhoneAddEditActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/dto/PhoneList.java" />
         <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/data/Phone.java" />
         <option value="$PROJECT_DIR$/src/com/foxykeep/datadroid/dto/PhoneFromServer.java" />
         <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfBaseListActivity.java" />
@@ -206,6 +205,8 @@
         <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/NewMainActvity.java" />
         <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfNewMainActvity.java" />
         <option value="$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/Requester.java" />
+        <option value="$PROJECT_DIR$/res/menu/crud_phone_list.xml" />
+        <option value="$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/BaseListActivity.java" />
       </list>
     </option>
   </component>
@@ -247,7 +248,7 @@
     </ignored-problems>
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -259,7 +260,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -287,6 +287,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="datadroidpoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLibExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestLibExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.foxykeep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datadroidpoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -396,22 +418,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="RestLibExample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RestLibExample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RestLibExample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -596,15 +609,17 @@
       <workItem from="1376919461005" duration="1287000" />
       <workItem from="1376922302718" duration="730000" />
       <workItem from="1376923066654" duration="1090000" />
+      <workItem from="1376983991133" duration="85000" />
+      <workItem from="1376984738029" duration="183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14078000" />
+    <option name="totallyTimeSpent" value="14346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1688" height="998" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -622,7 +637,7 @@
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25214198" sideWeight="0.6710059" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24663402" sideWeight="0.6710059" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24663402" sideWeight="0.6710059" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21893491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -693,126 +708,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/MainActvity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="42" selection-start="1156" selection-end="1210" vertical-scroll-proportion="0.0" vertical-offset="5292" max-vertical-offset="6289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/crud_phone_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/crud_phone_list_context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/crud_phone_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="65" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/BaseListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="39" selection-start="4289" selection-end="4303" vertical-scroll-proportion="0.0" vertical-offset="1558" max-vertical-offset="3268">
+        <state line="99" column="24" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.0" vertical-offset="1359" max-vertical-offset="3211">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/exception/ConnectionException.java">
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/data/PhoneRequestParams.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1786">
+        <state line="10" column="0" selection-start="193" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfBaseListActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/data/Phone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="21" selection-start="5251" selection-end="5251" vertical-scroll-proportion="0.0" vertical-offset="2252" max-vertical-offset="3211">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerDeletePhoneList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="8" selection-start="1585" selection-end="1624" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1045">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/ThisProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="106" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/PH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/ProviderHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="4" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="5453">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/PoCProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="346" column="53" selection-start="10363" selection-end="10363" vertical-scroll-proportion="0.0" vertical-offset="5961" max-vertical-offset="6840">
+        <state line="31" column="4" selection-start="620" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerAddPhoneList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="56" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="1197">
+        <state line="26" column="13" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="836">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerSyncPhoneList.java">
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerDeletePhoneList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="56" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1197">
+        <state line="24" column="13" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="722">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/workers/WorkerEditPhoneList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="56" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1330">
+        <state line="25" column="13" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="1330">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/ThisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/MainActvity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/ThisProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6745">
+        <state line="4" column="13" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/RestConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/PH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="143" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/NewMainActvity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/Lg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5111">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="11" column="28" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9139">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroidpoc/ui/CopyOfNewMainActvity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/foxykeep/datadroid/config/DialogActivityHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="50" selection-start="2720" selection-end="2720" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="5415">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/Requester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="169" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2774">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RestLib/src/ru/igarin/base/restlib/provider/NotifyingAsyncQueryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="58" selection-start="827" selection-end="827" vertical-scroll-proportion="0.64772725" vertical-offset="0" max-vertical-offset="2223">
+        <state line="12" column="0" selection-start="310" selection-end="346" vertical-scroll-proportion="0.14393939" vertical-offset="0" max-vertical-offset="1577">
           <folding />
         </state>
       </provider>

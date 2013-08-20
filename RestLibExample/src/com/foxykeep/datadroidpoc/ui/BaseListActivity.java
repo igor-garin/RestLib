@@ -98,9 +98,6 @@ public abstract class BaseListActivity extends ListActivity implements OnItemCli
         case R.id.menu_delete_all:
             showDialog(DialogConfig.DIALOG_DELETE_ALL_CONFIRM);
             return true;
-        case R.id.menu_copy_activity:
-            startActivity(new Intent(this,
-            		CopyOfNewMainActvity.class));
         default:
             return super.onContextItemSelected(item);
         }

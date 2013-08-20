@@ -37,10 +37,6 @@
         <activity
             android:name=".ui.CrudSyncPhoneAddEditActivity"
             android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".ui.CopyOfNewMainActvity"
-            android:label="@string/crud_sync_phone_list_title" >
-        </activity>
 
         <service
             android:name="com.foxykeep.datadroid.config.ThisService"

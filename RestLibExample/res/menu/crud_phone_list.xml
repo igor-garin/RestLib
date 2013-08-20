@@ -15,8 +15,5 @@
         android:id="@+id/menu_delete_all"
         android:icon="@android:drawable/ic_menu_delete"
         android:title="@string/crud_phone_list_menu_delete_all"/>
-    <item
-        android:id="@+id/menu_copy_activity"
-        android:title="copy"/>
 
 </menu>
