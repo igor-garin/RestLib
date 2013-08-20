@@ -3,7 +3,7 @@ package ru.igarin.base.restlib.provider;
 import java.util.List;
 
 import ru.igarin.base.common.RestLibLog;
-import ru.igarin.base.restlib.provider.annotations.ProviderStoreableType;
+import ru.igarin.base.restlib.provider.annotations.ProviderDataBaseTable;
 import android.content.ContentProvider;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -353,13 +353,10 @@ public abstract class PoCProvider extends ContentProvider {
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
 
-		if (!classToHandle.isAnnotationPresent(ProviderStoreableType.class)) {
+		if (!classToHandle.isAnnotationPresent(ProviderDataBaseTable.class)) {
 			RestLibLog.e("no annotation");
 			throw new IllegalArgumentException(
-					"Class is not an ProviderStoreableType!");
-		} else {
-			RestLibLog.d("class annotated ; name  -  "
-					+ classToHandle.getAnnotation(ProviderStoreableType.class));
+					"Class is not an ProviderDataBaseTable!");
 		}
 
 		return classToHandle;

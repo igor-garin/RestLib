@@ -1,0 +1,18 @@
+package ru.igarin.base.restlib.provider.annotations;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Inherited
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+public @interface ProviderDataBaseColumn {
+
+    public boolean primaryKey() default false;
+
+    public boolean inherited() default false;
+
+}

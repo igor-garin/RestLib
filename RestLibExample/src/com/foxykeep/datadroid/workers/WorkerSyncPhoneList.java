@@ -2,6 +2,7 @@ package com.foxykeep.datadroid.workers;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.os.Parcelable;
 

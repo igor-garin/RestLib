@@ -2,32 +2,35 @@ package com.foxykeep.datadroid.data;
 
 import com.google.gson.Gson;
 
-import ru.igarin.base.restlib.provider.annotations.ProviderStoreable;
-import ru.igarin.base.restlib.provider.annotations.ProviderStoreableType;
+import ru.igarin.base.restlib.provider.annotations.ProviderDataBaseColumn;
+import ru.igarin.base.restlib.provider.annotations.ProviderDataBaseTable;
 
 /**
  * Created by igarin on 8/19/13.
  */
-@ProviderStoreableType(version=2)
+@ProviderDataBaseTable(version=14)
 public class Phone {
 
-    @ProviderStoreable
+    @ProviderDataBaseColumn
     public long id;
 
-    @ProviderStoreable
+    @ProviderDataBaseColumn
     public String name;
 
-    @ProviderStoreable
+    @ProviderDataBaseColumn
     public String manufacturer;
 
-    @ProviderStoreable
+    @ProviderDataBaseColumn
     public String androidVersion;
 
-    @ProviderStoreable
+    @ProviderDataBaseColumn
     public double screenSize;
 
-    @ProviderStoreable
+    @ProviderDataBaseColumn
     public int price;
+    
+    @ProviderDataBaseColumn
+    public int TMP;
 
     public static String getPhone(Phone p) {
         return new Gson().toJson(p);
