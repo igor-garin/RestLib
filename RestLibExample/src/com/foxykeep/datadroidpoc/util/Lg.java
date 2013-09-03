@@ -1,4 +1,4 @@
-package com.foxykeep.datadroid.config;
+package com.foxykeep.datadroidpoc.util;
 
 import android.text.TextUtils;
 

@@ -29,8 +29,6 @@ import ru.igarin.base.restlib.network.internal.NetworkConnectionImpl;
  */
 public final class NetworkConnection {
 
-    private static final String LOG_TAG = NetworkConnection.class.getSimpleName();
-
     public static enum Method {
         GET, POST, PUT, DELETE
     }

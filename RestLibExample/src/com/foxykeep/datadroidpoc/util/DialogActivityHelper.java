@@ -1,4 +1,4 @@
-package com.foxykeep.datadroid.config;
+package com.foxykeep.datadroidpoc.util;
 
 import com.foxykeep.datadroidpoc.R;
 

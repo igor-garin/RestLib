@@ -1,5 +1,6 @@
 package com.foxykeep.datadroidpoc.ui;
 
+import ru.igarin.base.restlib.provider.PoCHelper;
 import ru.igarin.base.restlib.service.SingleRequestManagerActivityHelper;
 import ru.igarin.base.restlib.service.SingleRequestManagerActivityHelper.RequestListener;
 import android.app.Dialog;
@@ -9,10 +10,7 @@ import android.view.Window;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
-import com.foxykeep.datadroid.config.DialogActivityHelper;
-import com.foxykeep.datadroid.config.DialogActivityHelper.OnRetryClickListener;
-import com.foxykeep.datadroid.config.DialogConfig;
-import com.foxykeep.datadroid.config.PH;
+import com.foxykeep.datadroid.config.ThisProvider;
 import com.foxykeep.datadroid.config.ThisService;
 import com.foxykeep.datadroid.data.Phone;
 import com.foxykeep.datadroid.data.PhoneRequestParams;
@@ -21,7 +19,10 @@ import com.foxykeep.datadroid.workers.WorkerDeletePhoneList;
 import com.foxykeep.datadroid.workers.WorkerEditPhoneList;
 import com.foxykeep.datadroid.workers.WorkerSyncPhoneList;
 import com.foxykeep.datadroidpoc.R;
+import com.foxykeep.datadroidpoc.util.DialogActivityHelper;
+import com.foxykeep.datadroidpoc.util.DialogConfig;
 import com.foxykeep.datadroidpoc.util.UserManager;
+import com.foxykeep.datadroidpoc.util.DialogActivityHelper.OnRetryClickListener;
 
 public class NewMainActvity extends BaseListActivity implements RequestListener {
 	
@@ -68,7 +69,7 @@ public class NewMainActvity extends BaseListActivity implements RequestListener 
                 "manufacturer" };
         int[] bindTo = new int[] { R.id.tv_name, R.id.tv_manufacturer };
         SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
-                R.layout.crud_phone_list_item,  PH.from(this).query(Phone.class, null, null, null, null),
+                R.layout.crud_phone_list_item,  PoCHelper.init(ThisProvider.class).setContext(this).setClass(Phone.class).executeQuery(),
                 bindFrom, bindTo);
         setListAdapter(adapter);
         final ListView listView = getListView();
@@ -129,7 +130,6 @@ public class NewMainActvity extends BaseListActivity implements RequestListener 
 
         PhoneRequestParams param = new PhoneRequestParams();
         param.userId = mUserId;
-        param.setPhone(new Phone());
         
         mRequestHelper.startRequestForWorker(REQUEST_TYPE_LIST, WorkerSyncPhoneList.class, param);
     }
@@ -138,25 +138,25 @@ public class NewMainActvity extends BaseListActivity implements RequestListener 
 	protected Phone getPhoneOnPosition(int position) {
         Cursor c = (Cursor) ((SimpleCursorAdapter) getListAdapter())
                 .getItem(position);
-        return (Phone) PH.from(this).getFromCursor(Phone.class, c);
+        return (Phone) PoCHelper.getFromCursor(Phone.class, c);
 	}
 
 	@Override
-	protected void callSyncPhoneEditWS(Phone phone) {
+	protected void callSyncPhoneEditWS(long phone) {
 
         PhoneRequestParams param = new PhoneRequestParams();
         param.userId = mUserId;
-        param.setPhone(phone);
+        param.phoneId = phone;
 
         mRequestHelper.startRequestForWorker(REQUEST_TYPE_EDIT, WorkerEditPhoneList.class,
                 param);
 	}
 
 	@Override
-	protected void callSyncPhoneAddWS(Phone phone) {
+	protected void callSyncPhoneAddWS(long phone) {
         PhoneRequestParams param = new PhoneRequestParams();
         param.userId = mUserId;
-        param.setPhone(phone);
+        param.phoneId = phone;
         
         mRequestHelper.startRequestForWorker(REQUEST_TYPE_ADD, WorkerAddPhoneList.class,
                 param);
@@ -166,11 +166,10 @@ public class NewMainActvity extends BaseListActivity implements RequestListener 
 	protected void callSyncPhoneDeleteMonoWS() {
         Cursor c = (Cursor) ((SimpleCursorAdapter) getListAdapter())
                 .getItem(mPositionToDelete);
-        Phone phone = (Phone) PH.from(this).getFromCursor(Phone.class, c);
+        Phone phone = (Phone) PoCHelper.getFromCursor(Phone.class, c);
 
         PhoneRequestParams param = new PhoneRequestParams();
         param.userId = mUserId;
-        param.setPhone(new Phone());
         param.phoneIds = String.valueOf(phone.id);
         
         mRequestHelper.startRequestForWorker(REQUEST_TYPE_DELETE_MONO, WorkerDeletePhoneList.class, param);
@@ -184,7 +183,7 @@ public class NewMainActvity extends BaseListActivity implements RequestListener 
         Cursor c = adapter.getCursor();
         c.moveToFirst();
         while (!c.isAfterLast()) {
-            Phone phone = (Phone) PH.from(this).getFromCursor(Phone.class, c);
+            Phone phone = (Phone) PoCHelper.getFromCursor(Phone.class, c);
 
             sb.append(phone.id);
             if (c.moveToNext()) {
@@ -194,7 +193,6 @@ public class NewMainActvity extends BaseListActivity implements RequestListener 
 
         PhoneRequestParams param = new PhoneRequestParams();
         param.userId = mUserId;
-        param.setPhone(new Phone());
         param.phoneIds = sb.toString();
         
         mRequestHelper.startRequestForWorker(REQUEST_TYPE_DELETE_ALL, WorkerDeletePhoneList.class, param);
@@ -256,7 +254,7 @@ public class NewMainActvity extends BaseListActivity implements RequestListener 
 	}
 	
     private void updateAdapter() {
-        Cursor c =  PH.from(this).query(Phone.class, null, null, null, null);
+        Cursor c =  PoCHelper.init(ThisProvider.class).setContext(this).setClass(Phone.class).executeQuery();
 
         final SimpleCursorAdapter adapter = (SimpleCursorAdapter) getListAdapter();
         adapter.changeCursor(c);

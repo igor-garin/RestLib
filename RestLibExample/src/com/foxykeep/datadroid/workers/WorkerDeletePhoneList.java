@@ -4,8 +4,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
 
-import com.foxykeep.datadroid.config.PH;
 import com.foxykeep.datadroid.config.RestConst;
+import com.foxykeep.datadroid.config.ThisProvider;
 import com.foxykeep.datadroid.data.Phone;
 import com.foxykeep.datadroid.data.PhoneRequestParams;
 import com.foxykeep.datadroid.dto.PhoneList;
@@ -17,6 +17,7 @@ import ru.igarin.base.restlib.exception.ConnectionException;
 import ru.igarin.base.restlib.exception.CustomRequestException;
 import ru.igarin.base.restlib.exception.DataException;
 import ru.igarin.base.restlib.network.NetworkConnection;
+import ru.igarin.base.restlib.provider.PoCHelper;
 import ru.igarin.base.restlib.service.IServiceWorker;
 
 /**
@@ -41,7 +42,7 @@ public class WorkerDeletePhoneList implements IServiceWorker {
         PhoneList data = new Gson().fromJson(result.body, PhoneList.class);
 
         for (Phone phone : data.phones.phone) {
-            PH.from(context).delete(Phone.class, "id" + " = " + phone.id, null);
+        	PoCHelper.init(ThisProvider.class).setContext(context).setClass(Phone.class).setWhere("id" + " = " + phone.id).executeDelete();
         }
         return null;
 

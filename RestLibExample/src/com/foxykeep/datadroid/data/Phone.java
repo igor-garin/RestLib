@@ -1,7 +1,5 @@
 package com.foxykeep.datadroid.data;
 
-import com.google.gson.Gson;
-
 import ru.igarin.base.restlib.provider.annotations.ProviderDataBaseColumn;
 import ru.igarin.base.restlib.provider.annotations.ProviderDataBaseTable;
 
@@ -32,11 +30,4 @@ public class Phone {
     @ProviderDataBaseColumn
     public int TMP;
 
-    public static String getPhone(Phone p) {
-        return new Gson().toJson(p);
-    }
-
-    public static Phone getPhone(String p) {
-        return new Gson().fromJson(p, Phone.class);
-    }
 }

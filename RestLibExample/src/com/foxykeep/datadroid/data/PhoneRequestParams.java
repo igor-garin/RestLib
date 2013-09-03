@@ -9,16 +9,8 @@ import android.os.Parcelable;
 public class PhoneRequestParams implements Parcelable {
 
     public String userId;
-    public String phone;
+    public long phoneId;
     public String phoneIds;
-
-    public void setPhone(Phone p) {
-        phone = Phone.getPhone(p);
-    }
-
-    public Phone getPhone() {
-        return Phone.getPhone(phone);
-    }
 
     public String toString() {
         return ""+userId;
@@ -30,7 +22,7 @@ public class PhoneRequestParams implements Parcelable {
     // Parcelable management
     private PhoneRequestParams(final Parcel in) {
         userId = in.readString();
-        phone = in.readString();
+        phoneId = in.readLong();
         phoneIds = in.readString();
     }
 
@@ -40,7 +32,7 @@ public class PhoneRequestParams implements Parcelable {
 
     public void writeToParcel(final Parcel dest, final int flags) {
         dest.writeString(userId);
-        dest.writeString(phone);
+        dest.writeLong(phoneId);
         dest.writeString(phoneIds);
     }
 
@@ -53,50 +45,4 @@ public class PhoneRequestParams implements Parcelable {
             return new PhoneRequestParams[size];
         }
     };
-
-
-    /* (non-Javadoc)
-     * @see java.lang.Object#hashCode()
-     */
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((phone == null) ? 0 : phone.hashCode());
-        result = prime * result
-                + ((userId == null) ? 0 : userId.hashCode());
-        return result;
-    }
-
-    /* (non-Javadoc)
-     * @see java.lang.Object#equals(java.lang.Object)
-     */
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (!(obj instanceof PhoneRequestParams)) {
-            return false;
-        }
-        PhoneRequestParams other = (PhoneRequestParams) obj;
-        if (phone == null) {
-            if (other.phone != null) {
-                return false;
-            }
-        } else if (!phone.equals(other.phone)) {
-            return false;
-        }
-        if (userId == null) {
-            if (other.userId != null) {
-                return false;
-            }
-        } else if (!userId.equals(other.userId)) {
-            return false;
-        }
-        return true;
-    }
 }
