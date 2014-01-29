@@ -1,7 +1,7 @@
 package com.foxykeep.datadroidpoc.ui;
 
-import ru.igarin.base.restlib.service.SingleRequestManagerActivityHelper;
-import ru.igarin.base.restlib.service.SingleRequestManagerActivityHelper.RequestListener;
+import ru.igarin.base.service.SingleRequestManagerActivityHelper;
+import ru.igarin.base.service.SingleRequestManagerActivityHelper.RequestListener;
 
 import com.foxykeep.datadroid.config.ThisService;
 

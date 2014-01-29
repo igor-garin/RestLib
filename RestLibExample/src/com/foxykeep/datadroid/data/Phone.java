@@ -1,7 +1,7 @@
 package com.foxykeep.datadroid.data;
 
-import ru.igarin.base.restlib.provider.annotations.ProviderDataBaseColumn;
-import ru.igarin.base.restlib.provider.annotations.ProviderDataBaseTable;
+import ru.igarin.base.provider.annotations.ProviderDataBaseColumn;
+import ru.igarin.base.provider.annotations.ProviderDataBaseTable;
 
 /**
  * Created by igarin on 8/19/13.

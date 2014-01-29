@@ -3,10 +3,10 @@ package com.foxykeep.datadroid.workers;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
-import ru.igarin.base.restlib.exception.ConnectionException;
-import ru.igarin.base.restlib.exception.CustomRequestException;
-import ru.igarin.base.restlib.exception.DataException;
-import ru.igarin.base.restlib.service.IServiceWorker;
+import ru.igarin.base.service.IServiceWorker;
+import ru.igarin.base.service.exception.ConnectionException;
+import ru.igarin.base.service.exception.CustomRequestException;
+import ru.igarin.base.service.exception.DataException;
 
 public class Worker implements IServiceWorker {
 

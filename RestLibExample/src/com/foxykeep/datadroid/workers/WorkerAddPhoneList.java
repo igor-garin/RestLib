@@ -2,12 +2,12 @@ package com.foxykeep.datadroid.workers;
 
 import java.util.HashMap;
 
-import ru.igarin.base.restlib.exception.ConnectionException;
-import ru.igarin.base.restlib.exception.CustomRequestException;
-import ru.igarin.base.restlib.exception.DataException;
-import ru.igarin.base.restlib.network.NetworkConnection;
-import ru.igarin.base.restlib.provider.PoCHelper;
-import ru.igarin.base.restlib.service.IServiceWorker;
+import ru.igarin.base.provider.PoCHelper;
+import ru.igarin.base.service.IServiceWorker;
+import ru.igarin.base.service.exception.ConnectionException;
+import ru.igarin.base.service.exception.CustomRequestException;
+import ru.igarin.base.service.exception.DataException;
+import ru.igarin.base.service.network.NetworkConnection;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

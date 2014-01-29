@@ -3,10 +3,10 @@ package com.foxykeep.datadroidpoc.ui;
 import com.foxykeep.datadroid.config.ThisService;
 import com.foxykeep.datadroid.workers.Worker;
 
-import ru.igarin.base.restlib.service.RequestManager;
-import ru.igarin.base.restlib.service.SimpleReqParams;
-import ru.igarin.base.restlib.service.SingleRequestManagerActivityHelper;
-import ru.igarin.base.restlib.service.RequestManager.OnRequestFinishedListener;
+import ru.igarin.base.service.RequestManager;
+import ru.igarin.base.service.SimpleReqParams;
+import ru.igarin.base.service.SingleRequestManagerActivityHelper;
+import ru.igarin.base.service.RequestManager.OnRequestFinishedListener;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;

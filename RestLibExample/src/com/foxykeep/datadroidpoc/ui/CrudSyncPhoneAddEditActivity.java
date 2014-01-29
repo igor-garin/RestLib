@@ -8,7 +8,7 @@
  */
 package com.foxykeep.datadroidpoc.ui;
 
-import ru.igarin.base.restlib.provider.PoCHelper;
+import ru.igarin.base.provider.PoCHelper;
 import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;

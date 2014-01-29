@@ -1,8 +1,8 @@
 package com.foxykeep.datadroidpoc.ui;
 
-import ru.igarin.base.restlib.provider.PoCHelper;
-import ru.igarin.base.restlib.service.RequestManager;
-import ru.igarin.base.restlib.service.RequestManager.OnRequestFinishedListener;
+import ru.igarin.base.provider.PoCHelper;
+import ru.igarin.base.service.RequestManager;
+import ru.igarin.base.service.RequestManager.OnRequestFinishedListener;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.Dialog;

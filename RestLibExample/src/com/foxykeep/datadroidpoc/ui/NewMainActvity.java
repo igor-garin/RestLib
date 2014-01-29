@@ -1,8 +1,8 @@
 package com.foxykeep.datadroidpoc.ui;
 
-import ru.igarin.base.restlib.provider.PoCHelper;
-import ru.igarin.base.restlib.service.SingleRequestManagerActivityHelper;
-import ru.igarin.base.restlib.service.SingleRequestManagerActivityHelper.RequestListener;
+import ru.igarin.base.provider.PoCHelper;
+import ru.igarin.base.service.SingleRequestManagerActivityHelper;
+import ru.igarin.base.service.SingleRequestManagerActivityHelper.RequestListener;
 import android.app.Dialog;
 import android.database.Cursor;
 import android.os.Bundle;
