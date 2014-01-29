@@ -141,6 +141,7 @@ class ProviderHelper {
 
     static Object getFromCursor(Class<? extends Object> cls, Cursor c) {
         if (c.getPosition() == -1) {
+        	c.moveToFirst();//TODO:
             throw new IllegalArgumentException(
                     "Cursor position should be set.");
         }
