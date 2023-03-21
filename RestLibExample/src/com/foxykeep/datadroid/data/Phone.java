@@ -4,7 +4,7 @@ import ru.igarin.base.provider.annotations.ProviderDataBaseColumn;
 import ru.igarin.base.provider.annotations.ProviderDataBaseTable;
 
 /**
- * Created by igarin on 8/19/13.
+ * Updated by igarin on 21/4/23.
  */
 @ProviderDataBaseTable(version=14)
 public class Phone {
